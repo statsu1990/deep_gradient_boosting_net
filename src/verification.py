@@ -36,7 +36,7 @@ def veri_dgbn_cifar10():
     #shrinkage = 0.06
     print('shrinkage : {0}'.format(shrinkage))
     l2 = 0.0
-    deep_gb_net = dgbn.DeepGBnet2(boosting_num=boosting_num, shrinkage=shrinkage, l2=l2)
+    deep_gb_net = dgbn.DeepGBnet(boosting_num=boosting_num, shrinkage=shrinkage, l2=l2)
 
     epochs = 100
     batch_size = 256
